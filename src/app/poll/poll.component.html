@@ -1,0 +1,14 @@
+<div class="card mb-4">
+  <div class="poll-image">
+    <img [src]="pollImage" />
+  </div>
+  <div class="card-body">
+    <p class="card-text text-truncate font-weight-bold">
+      {{ question }}
+    </p>
+    <div class="d-flex justify-content-between">
+      <small class="text-muted">Votes: {{ numberofVotes }}</small>
+      <small *ngIf="voted" class="badge badge-success">Voted</small>
+    </div>
+  </div>
+</div>
